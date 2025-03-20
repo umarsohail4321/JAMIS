@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628134518289",
+    "project_id": "jamis-b4ac9",
+    "storage_bucket": "jamis-b4ac9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628134518289:android:aeecac38836e1c8ab39bb0",
+        "android_client_info": {
+          "package_name": "com.app.jamis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHIXuwWJndsUmV7I_fEbU9MrSQ7y5lACc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
