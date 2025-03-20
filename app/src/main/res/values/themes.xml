@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CareerCampus" parent="Theme.Material3.Light.NoActionBar">
+    <item name="colorPrimary">@color/darkgrey</item>
+
+        <item name="android:statusBarColor">@color/black</item>
+
+    </style>
+
+    <style name="Theme.CareerCampus" parent="Base.Theme.CareerCampus" />
+</resources>
