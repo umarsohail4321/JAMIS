@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+    <LinearLayout
+        android:id="@+id/abovelayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/logoview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cc_logo4"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+
+    </LinearLayout>
+
+
+
+    <!-- Linear Layout with white background -->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/layoutbg"
+        android:padding="16dp"
+        android:layout_below="@+id/abovelayout">
+
+        <!-- TextView with specified content -->
+
+        <!-- Button to show fragment -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Corporate Hiring"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/ar_one_sans"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:text="JAMIS connects employers with top talent in a snap! Whether you're hiring or job hunting, our app makes finding the perfect match fast and easy!"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showFragmentButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/startbtn"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/yellow"
+            android:elevation="8dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/ar_one_sans"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <!-- FrameLayout to hold fragments -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

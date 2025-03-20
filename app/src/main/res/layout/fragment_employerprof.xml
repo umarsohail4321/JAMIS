@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".employerprofFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/editLayout"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profileBackground"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wall3" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/employer2"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:background="@color/lightgrey"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <!-- Button to upload photo -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/uploadPhotoBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:background="@drawable/login_btn"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/profileImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+
+            <!-- Name Field -->
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/uploadPhotoBtn"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your full name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/nameLabel"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="5dp" />
+
+            <!-- Full Name Field -->
+            <TextView
+                android:id="@+id/fullNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Email"
+                android:textSize="18sp"
+                android:fontFamily="@font/ar_one_sans"
+                android:textStyle="bold"
+                android:layout_below="@id/nameInput"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:background="@drawable/edittext"
+                android:hint="Enter your email"
+                android:layout_below="@id/fullNameLabel"
+                android:layout_marginTop="5dp" />
+
+            <!-- About Field -->
+            <TextView
+                android:id="@+id/companyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Company Name"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/emailInput"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/companyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/companyLabel"
+                android:layout_marginTop="5dp"
+                android:hint="Enter your company name"
+                android:inputType="textMultiLine" />
+
+
+            <TextView
+                android:id="@+id/designationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Designation"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/companyInput"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/designationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_below="@id/designationLabel"
+                android:layout_marginTop="5dp"
+                android:hint="Enter your designation"
+                android:inputType="textMultiLine" />
+            <TextView
+                android:id="@+id/aboutLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Company"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_below="@id/designationInput"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/aboutInput"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Enter something about your company"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:background="@drawable/edittext"
+                android:layout_below="@id/aboutLabel"
+                android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/aboutInput"
+                android:gravity="center_vertical">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save Info"
+                    android:background="@drawable/login_btn"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ar_one_sans"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="start" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/logout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:background="@drawable/login_btn"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/ar_one_sans"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="start" />
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/profileLayout"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profileBackground2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wall3" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileImage2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:background="@color/lightgrey"
+                    android:scaleType="centerCrop"
+                    android:fontFamily="@font/ar_one_sans"
+                    android:src="@drawable/employer2"
+                    app:shapeAppearanceOverlay="@style/roundedImageView" />
+            </RelativeLayout>
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/employerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="John Doe"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- User Email -->
+            <TextView
+                android:id="@+id/employerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="johndoe@gmail.com"
+                android:fontFamily="@font/ar_one_sans"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/employerDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:text="johndoe@gmail.com"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <!-- User Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textSize="16sp"
+                android:fontFamily="@font/ar_one_sans"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="8dp" />
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#424242"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Profile"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="8dp" />
+            <TextView
+                android:id="@+id/companyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#424242"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="8dp" />
+
+            <!-- Edit Profile Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:fontFamily="@font/ar_one_sans"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:background="@drawable/login_btn"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="8dp" />
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/>
+    <size android:height="45dp"/> <!-- Set thickness of the line -->
+    <corners android:radius="5dp"/> <!-- No corner radius -->
+    <stroke android:color="@color/grey" android:width="1dp"/> <!-- Change color of the line -->
+</shape>

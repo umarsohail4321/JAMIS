@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    tools:context=".HomeFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:background="@color/grey">
+
+        <!-- Recommended Jobs Heading -->
+        <TextView
+            android:id="@+id/recommendedJobsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Jobs"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:layout_alignParentTop="true" />
+
+        <!-- RecyclerView for Job List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jobRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/recommendedJobsHeading"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="16dp"
+        android:clipToPadding="false"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/noInternetImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nowifi"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>
+
+
+

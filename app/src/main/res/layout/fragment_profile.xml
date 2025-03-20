@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profileBackground"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wall3" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/cartoon2"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:background="#F0F0F0"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+        <!-- Button to upload photo -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadPhotoBtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn"
+            android:text="Upload Photo"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ar_one_sans"
+            android:textAllCaps="false"
+            android:layout_below="@id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- Name Field -->
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/uploadPhotoBtn"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/nameLabel"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp" />
+
+        <!-- Full Name Field -->
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ar_one_sans"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/nameInput"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:hint="Enter your email"
+            android:layout_below="@id/fullNameLabel"
+            android:layout_marginTop="5dp" />
+
+        <!-- Age Field -->
+        <TextView
+            android:id="@+id/ageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/fullNameInput"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your age"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext"
+            android:layout_below="@id/ageLabel"
+            android:layout_marginTop="5dp"
+            android:inputType="number" />
+
+        <!-- gender Field -->
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/ageInput"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/GenderSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderLabel"
+            android:layout_marginTop="5dp" />
+
+        <!-- TextView to show the selected gender -->
+
+
+
+        <!-- Qualifications Field -->
+        <TextView
+            android:id="@+id/qualificationsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:text="Qualifications"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/GenderSpinner"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/qualificationsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/ar_one_sans"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/qualificationsLabel"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your qualifications"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/companyAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/qualificationsInput"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/companyAddressInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/ar_one_sans"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/companyAddressLabel"
+            android:layout_marginTop="5dp"
+            android:hint="Enter address"
+            android:inputType="textMultiLine" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/companyAddressInput"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:background="@drawable/login_btn"
+                android:layout_weight="1"
+                android:fontFamily="@font/ar_one_sans"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                android:layout_width="0dp"
+                android:background="@drawable/login_btn"
+                android:layout_height="wrap_content"
+                android:text="Save Info"
+                android:fontFamily="@font/ar_one_sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:text="Job Category" />
+
+            <EditText
+                android:id="@+id/edit_job_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ar_one_sans"
+                android:background="@drawable/edittext"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Job Category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:text="Designation" />
+
+            <EditText
+                android:id="@+id/edit_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Designation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:text="Skills Required" />
+
+            <EditText
+                android:id="@+id/edit_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Required Skills" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:text="Country" />
+
+            <EditText
+                android:id="@+id/edit_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Hiring in which country" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/ar_one_sans"
+                android:text="City" />
+
+            <EditText
+                android:id="@+id/edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Hiring in which city" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save_job"
+                android:layout_width="match_parent"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/ar_one_sans"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
